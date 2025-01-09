@@ -1,0 +1,255 @@
+//간격
+$interval: 8px;
+
+//height Height
+$heightXl: 54px;
+$heightLg: 48px;
+$heightMd: 40px; //기본
+$heightSm: 32px;
+$heightXs: 30px;
+
+$base-height: (
+  "Xl": $heightXl,
+  "Lg": $heightLg,
+  "Md": $heightMd,
+  "Sm": $heightSm,
+  "Xs": $heightXs,
+);
+
+//icon Size
+$iconXxl: 160px;
+$iconXl: 48px;
+$iconLg: 32px;
+$iconMd: 24px; //기본
+$iconSm: 20px;
+$iconXs: 18px;
+
+$icon-height: (
+  "Xxl": $iconXxl,
+  "Xl": $iconXl,
+  "Lg": $iconLg,
+  "Md": $iconMd,
+  "Sm": $iconSm,
+  "Xs": $iconXs,
+);
+
+//font Size
+$fontXxl: 24px;
+$fontXl: 20px;
+$fontLg: 16px;
+$fontMd: 14px; //기본
+$fontSm: 12px;
+$fontXs: 10px;
+
+$font-size: (
+  "Xxl": $fontXxl,
+  "Xl": $fontXl,
+  "Lg": $fontLg,
+  "Md": $fontMd,
+  "Sm": $fontSm,
+  "Xs": $fontXs,
+);
+
+//border Round
+$radius: 8px; //기본
+$radius20: 20px;
+$radius30: 30px;
+$radius50: 50%;
+
+$base-radius: (
+  "Radius": $radius,
+  "Radius20": $radius20,
+  "Radius30": $radius30,
+  "Radius50": $radius50,
+);
+
+//color
+$primary: #219BF1;
+$blue: #4abaf6;
+$success: #03b77a;
+$warning: #fcd211;
+$danger: #FF567F;
+$dark: #04253e;
+$darkBlue: #00538A;
+$info: #e9e9e9;
+
+//font color
+$darkBlack: #111111;
+$black: #0C0C0D;
+$gray: #4D545B; //기본
+$lightGray: #7F8896;
+$light: #f7f8f9;
+$white: #ffffff;
+
+$theme-colors: (
+  "Primary": $primary,
+  "Success": $success,
+  "Warning": $warning,
+  "Danger": $danger,
+  "Dark": $dark,
+  "Info": $info,
+  "DarkBlack": $darkBlack,
+  "Black": $black,
+  "Gray": $gray,
+  "LightGray": $lightGray,
+  "DarkBlue": $darkBlue,
+  "Light": $light,
+  "White": $white,
+  "Blue": $blue,
+);
+
+//font Weight
+$font100: 100;
+$font200: 200;
+$font300: 300;
+$font400: 400;
+$font500: 500;
+$font600: 600;
+$font700: 700;
+$font800: 800;
+$font900: 900;
+
+//자주쓰는 mixin
+
+@mixin fj {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin fs {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+@mixin fe {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+@mixin fc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//세로 정렬
+@mixin fcs {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+}
+
+@mixin ellipsis {
+  display: inline-block;
+  width: 98%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+@mixin ellipsisLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-height: 120%;
+  height: 100%;
+}
+
+@mixin iconCenter {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+@mixin iconLeft {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+
+@mixin iconRight {
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+@mixin iconXxl {
+  width: $iconXxl;
+  height: $iconXxl;
+}
+
+@mixin iconXl {
+  width: $iconXl;
+  height: $iconXl;
+}
+
+@mixin iconLg {
+  width: $iconLg;
+  height: $iconLg;
+}
+
+@mixin iconMd {
+  width: $iconMd;
+  height: $iconMd;
+}
+
+@mixin iconSm {
+  width: $iconSm;
+  height: $iconSm;
+}
+
+@mixin iconXs {
+  width: $iconXs;
+  height: $iconXs;
+}
+
+//화면 크기
+$mobileXs: 374px;
+$mobile: 767px;
+$tablet: 1023px;
+$desktop: 1024px;
+
+//374px 이하일때
+@mixin mobileXs {
+  @media (max-width: $mobileXs) {
+    @content;
+  }
+}
+
+//767px 이하일때
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+//768이상, 1023px 이하일때
+@mixin tablet {
+  @media (min-width: $mobile+1) and (max-width: $tablet) {
+    @content;
+  }
+}
+
+// 1024px 이상일때
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+//넓이, 높이 자동 계산함수
+@mixin square($size) {
+  $calculated: 32px * $size;
+  width: $calculated;
+  height: $calculated;
+
+  //사용 @include square(5);
+}
