@@ -1,0 +1,581 @@
+
+
+
+/**************************************
+                메인화면              
+**************************************/
+
+/*gnb*/
+.gnb_area { width: 100%; background: #fff; padding: 12px 0; border-bottom: 2px #363636 solid; }
+.gnb_area .gnb_contents_area {width: 1218px; position: relative; margin: auto; padding: 0; display: flex; justify-content: space-between}
+.gnb_area .gnb_contents_area .left_gnb_txt {font-size: 0.875rem; letter-spacing: -1.2px; font-weight: 400}
+.gnb_area .gnb_contents_area .left_gnb_txt span {margin-right: 5px}
+.gnb_area .gnb_contents_area .left_gnb_txt .gnb_sns_icon {}
+.gnb_area .gnb_contents_area .left_gnb_txt .gnb_sns_icon a {display: flex; margin: 0 5px}
+
+.gnb_area .gnb_contents_area .right_gnb_txt {font-size: 0.875rem; letter-spacing: -1.2px; font-weight: 400}
+.gnb_area .gnb_contents_area .right_gnb_txt a {margin-right: 10px}
+
+
+/*header*/
+.top_header_area {display: flex; align-items: center; justify-content: space-between; padding: 19px 0}
+.top_header_area div {width: 100%}
+.top_header_area div:nth-child(2) {text-align: center}
+.top_header_area div:nth-child(3) {text-align: right}
+.top_header_area .m_menu_ico {display: none}
+.top_header_area .m_search_ico {display: none}
+
+
+/*드롭다운 전체메뉴*/
+.menu-nature .dorp-down-menu {}
+.menu-drop .dorp-down-menu {display: block; top: 267px; height: 310px; padding-top: 20px; }
+.dorp-down-menu {width: 100%; height: 0; background-color: #fff; padding: 0; position: absolute; top: 267px; z-index: 999; box-shadow: 0 4px 3px 0px rgba(68, 68, 68, 0.48); -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s;}
+
+.sitemap-container {width: 1100px; padding: 20px 0; margin: auto; height: 0;  padding: 0; background: #fff; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; overflow: hidden}
+.menu-nature .sitemap-container ul {  width: auto; position: relative;  height: auto; padding-right: 30px; display: flex; margin-bottom: 0;padding-left: 30px !important}
+.menu-nature .sitemap-container ul h1 {font-size: 0.9375rem; color: #008840; padding-bottom: 15px; width: 95px; font-weight: 500; display: inline-block; margin-right: 50px;}
+.menu-nature .sitemap-container ul h1 a {color: #004ea2}
+.menu-nature .sitemap-container ul li { font-size: 0.875rem; padding: 0;cursor: pointer;list-style: none; display: inline-block; margin-right: 15px}
+
+.menu-drop .sitemap-container {display: block; height: 285px; padding: 15px 0}
+.menu-drop .sitemap-container ul { width: auto; position: relative; height: auto; padding-right: 30px; display: flex; margin-bottom: 0; padding-left: 30px !important}
+.menu-drop .sitemap-container ul h1 {font-size: 0.9375rem; color: #008840; padding-bottom: 15px; display: inline-block; margin-right: 50px; font-weight: 500; width: 95px}
+.menu-drop .sitemap-container ul h1 a {cursor: pointer; color: #004ea2}
+.menu-drop .sitemap-container ul li { font-size: 0.875rem; padding: 0 !important; cursor: pointer;list-style: none; margin-right: 15px}
+.menu-drop .sitemap-container ul li:hover {font-weight: 500}
+.map-box01 { float: left; width: 550px; border-right: 1px #d7d7d7 solid}
+
+
+/*모바일 사이드메뉴*/
+.m-side-menu {width: 100%; background-color: #fff; position: fixed; z-index: 99999; height: 100%; overflow: auto; margin-left: -100%; display: none}
+.m-side-menu .menu-title-container {padding: 15px; border-bottom: 2px #d7d7d7 solid;}
+.m-side-menu .menu-title-container img {width: 127px; display: inline-block}
+.m-side-menu .menu-title-container .cancel-ico-01 {float: right; width: 18px !important; position: relative; top: 5px; cursor: pointer}
+
+.m-side-menu .menu-section {width: 100%; padding: 10px 0 10px 15px; text-align: left; float: left; border-bottom: 2px #d7d7d7 solid; font-weight: 600;}
+.m-side-menu .menu-step {width: 100%; padding: 0 15px 15px; border-bottom: 2px #d7d7d7 solid; float: left}
+.m-side-menu .menu-step ul {padding-left: 0;  margin-bottom: 0; display: flex; flex-direction: row; justify-content: flex-start}
+.m-side-menu .menu-step ul li {list-style: none; float: left; margin-right: 2%; margin-top: 15px; width: 32%}
+.m-side-menu .menu-step ul li:last-child {margin-right: 0}
+.m-side-menu .menu-step ul .side-menu-btn {width: 100%; font-size: 0.9rem !important; letter-spacing: -0.9px; padding: .375rem 0.5rem !important; font-weight: 400}
+
+
+/*검색창*/
+.menu_left_contents .search_area {width: 225px; cursor: pointer}
+.menu_left_contents .top-search-input { border: 1px #d7d7d7 solid; margin-left: 15px; display: inline-block; position: relative; height: 40px; display: none; margin-bottom: 14px}
+.menu_left_contents .top-search-input .search-input { padding: 7px; border: 0; width: 208px; display: inline-block; padding-right: 0}
+.menu_left_contents .top-search-input .search-ico { background: url(../images/ico/search_ico_01.png)no-repeat; width: 24px; height: 22px; position: absolute; right: 9px; top: 7px; cursor: pointer;}
+.menu_left_contents .top-search-input .search_bar_cancel {background: url(../images/ico/search_cencel.png)no-repeat; width: 21px; height: 21px; position: absolute; right: -30px; top: 8px; cursor: pointer}
+
+
+/*menu*/
+.menu_area {width: 100%; padding: 15px 0 0; border-bottom: 2px #363636 solid; display: flex; justify-content: space-between; align-items: center; margin-top: 20px; flex: 1; height: 50px}
+.menu_area div {}
+.menu_area .menu_left_contents {display: flex; align-items: center; padding-bottom: 8px}
+.menu-nature .menu_area .menu_left_contents .main_menu {margin-right: 25px; cursor: pointer; background: url(../images/ico/top_menu_ico_01.png)no-repeat; width: 21px; height: 15px}
+.menu-drop .menu_area .menu_left_contents .main_menu {margin-right: 25px; cursor: pointer; background: url(../images/ico/top_menu_cacel.png)no-repeat; width: 21px; height: 18px}
+
+.menu_area .menu_con_txt {text-align: center}
+.menu_area .menu_con_txt ul {margin-bottom: 0}
+.menu_area .menu_con_txt ul a {margin-right: 20px; display: inline-block} 
+.menu_area .menu_con_txt ul a li {list-style: none; letter-spacing: -1.2px; padding-bottom: 8px}
+.menu_area .menu_con_txt ul a li.active { font-weight: 600; color: #28a0ee; padding-bottom: 4px; border-bottom: 4px #004ea2 solid;}
+.menu_area .menu_con_txt ul a li:hover { font-weight: 600;}
+.menu_area .menu_con_txt .m_sp_menu {display: none !important}
+.menu_area .menu_con_txt .m_sp_menu:first-child {margin-left: 20px}
+
+.menu_right_contents {padding-bottom: 8px}
+.menu_right_contents ul {margin-bottom: 0}
+.menu_right_contents ul a {margin-right: 20px; display: inline-block}
+.menu_right_contents ul a li {list-style: none; letter-spacing: -1.2px; color: #004ea2}
+.menu_right_contents ul a:last-child {margin-right: 0}
+
+
+/*top news*/
+.top_news_contents {margin-top: 30px}
+.top_news_contents .top_news_01 {background-color: #fff; width: 100%; height: 558px}
+.top_news_contents .top_news_01 .top_img_area {width: 100%; height: 370px; position: relative}
+.top_news_contents .top_news_01 .top_news_title {font-size: 2.25rem; letter-spacing: -3.5px; margin-top: 20px; font-weight: 400; overflow: hidden; text-overflow: ellipsis; white-space: nowrap}
+.top_news_contents .top_news_01 .topnews_txt_area {font-size: 0.875rem; color: #7d7d7d; font-weight: 400; margin-top: 18px; letter-spacing: -0.8px; line-height: 1.8; height: 50px; overflow: hidden}
+.top_news_contents .top_news_01 .topnews_txt_area:hover {text-decoration: underline}
+
+.top_news_contents .top_news_01 .live-news-container {width: 100%; border-top: 1px #363636 solid; border-bottom: 1px #363636 solid; margin-top: 12px; background-color: #fff; display: flex; align-items: flex-start;  justify-content: space-between; height: 44px; overflow: hidden; padding-right: 0}
+.top_news_contents .top_news_01 .live-news-container h5 {margin-bottom: 0; font-size: 1.125rem; letter-spacing: -1.8px; color: #363636; font-weight: 500; display: flex; align-items: center; padding-left: 10px; height: 44px; flex-grow: 1}
+.top_news_contents .top_news_01 .latest-newsList { display: inline-block; margin-bottom: 0; overflow: hidden; height: auto; position: relative; width: 500px; padding-left: 0; margin-left: -12px; flex-grow: 2}
+.latest-newsList li {list-style: none; cursor: pointer; letter-spacing: -0.6px; height: 42px; display: flex; align-items: center; position: relative; font-size: 1rem; text-align: left;}
+.top_news_contents .top_news_01 .latest-newsList li a {position: relative;  display: block; font-weight: 400; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; letter-spacing: -1.5px}
+.top_news_contents .top_news_01 .latest-newsList li:hover {text-decoration: underline}
+
+.top_news_right01 {width: 100%; height: 558px; background-color: #fff}
+.top_news_right01 a {margin-bottom: 30px; width: 100%; float: left}
+.top_news_right01 a .right_top_news_01 {width: 100%; height: 265px; position: relative}
+.top_news_right01 a .right_top_news_01 .thumb_title_back {width: 100%; height: 148px; padding: 15px; position: absolute; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(7,7,7,1) 65%,rgba(7,7,7,1) 100%); display: flex; align-items: flex-end}
+.top_news_right01 a .right_top_news_01 .thumb_title_back p {color: #fff; font-size: 1.25rem; letter-spacing: -1.5px; margin-bottom: 0; height: 60px; overflow: hidden}
+.latest-news-list-box { width: calc(100% - 28px); height: 344px; overflow-y: scroll; /*margin-left: 10px !important; margin-right: 10px !important*/ background-color: #f9f9f9}
+.latest-news-list-box a {font-weight: 400; font-size:0.9375rem; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; cursor: pointer}
+.latest-news-arrow {background: url(../images/ico/dropdown_arrow.png)no-repeat right; cursor: pointer; width: 45px; height: 42px; display: inline-block; position: relative; bottom: 1px; right: 10px}
+
+
+/*청년센터 나라밖*/
+.middle_news_area01 {width: 100%; background-color: #333333; margin-top: 20px; padding: 30px}
+.middle_news_area01 .md_news_title {color: #fff; padding-bottom: 10px; border-bottom: 1px #fff solid; font-size: 1.5rem}
+.middle_news_area01 .md_news_title .more_ico_position {float: right; }
+.middle_news_area01 .sp_news_box {width: 100%; height: 275px; background-color: #fff; margin-top: 27px; position: relative}
+.middle_news_area01 .sp_news_box .spnews_imgBox {width: 100%; height: 204px}
+.middle_news_area01 .sp_news_box .spnews_sec_title { width: 120px; background-color: #d50430; padding: 5px; position: absolute; top: 0; left: 0; text-align: center}
+.middle_news_area01 .sp_news_box .spnews_sec_title span {color: #fff}
+.middle_news_area01 .sp_news_box .spnews_news_title {padding: 10px; letter-spacing: -1.5px; font-weight: 500; font-size: 1.125rem; height: 63px; overflow: hidden}
+.middle_news_area01 .sp_news_box .spnews_news_title:hover {text-decoration: underline}
+
+
+/*중간 세로3단기사*/
+.md_news_area_02 {margin-top: 75px}
+.md_news_area_02 .md_news_nthBox {margin-bottom: 34px}
+.md_news_area_02 .md_news_nthBox:last-child {margin-bottom: 0}
+.md_news_area_02 .md_news_nthBox .mdNews_thumb {width: 173px; height: 120px; position: relative; margin-right: 25px; overflow: hidden}
+.md_news_area_02 .md_news_nthBox .md_news_body {position: relative; overflow: hidden; height: 120px}
+.md_news_area_02 .md_news_nthBox .md_news_body h6 {font-size: 1.1875rem; font-weight: 500; letter-spacing: -1.8px; line-height: 1.4; height: auto; overflow: hidden; max-height: 52px}
+.md_news_area_02 .md_news_nthBox .md_news_body h6:hover {text-decoration: underline}
+.md_news_area_02 .md_news_nthBox .md_news_body span {height: auto; overflow: hidden; font-size: 0.875rem; color: #7d7d7d; letter-spacing: -1px; display: block}
+.md_news_area_02 .md_news_nthBox .md_news_body span:hover {text-decoration: underline}
+
+.md_news_area_02 .md_news_center {width: 100%; height: 228px; border: 1px #d7d7d7 solid; position: relative; margin-bottom: 30px}
+.md_news_area_02 .md_news_center:last-child {margin-bottom: 0}
+.md_news_area_02 .md_news_center .news_img_container {width: 100%; height: 163px}
+.md_news_area_02 .md_news_center .md_news_title_box {padding: 10px; width: 100%; height: 60px; display: block; display: flex; align-items: center; overflow: hidden}
+.md_news_area_02 .md_news_center .md_news_title_box .mdNews_box_title { letter-spacing: -1px; font-weight: 600; max-height: 45px}
+.md_news_area_02 .md_news_center .mdnews_sec_title {width: 100px; background-color: #fff; position: absolute; top: -1px; left: -1px; padding: 5px}
+.md_news_area_02 .md_news_center .mdnews_sec_title span {letter-spacing: -1px; font-weight: 500; color: #28a0ee}
+
+.opinion_section {width: 100%; height: 154px; border: 1px #d7d7d7 solid; padding: 20px}
+.opinion_section .opinion_editorial {padding-bottom: 10px; border-bottom: 1px #d7d7d7 solid; font-size: 1.125rem}
+.opinion_section .opinion_editorial a {}
+.opinion_section .opinion_editorial a .more_ico_position { float: right}
+.opinion_section .editorial_title { margin-top: 20px; text-align: center; font-size: 1.25rem; color: #004ea2; letter-spacing: -1.8px}
+.opinion_section .opinion_title_container {display: flex; justify-content: space-between; padding-bottom: 5px; border-bottom: 1px #d7d7d7 solid}
+.opinion_section .opinion_title_container h6 {font-size: 1.125rem;}
+
+.opinion_area {width: 100%; height: 560px; border: 1px #d7d7d7 solid; margin-top: 30px; padding: 20px}
+.opinion_area .opinion_editorial {padding-bottom: 10px; border-bottom: 1px #d7d7d7 solid; font-size: 1.125rem}
+.opinion_area .opinion_editorial a {}
+.opinion_area .opinion_editorial a .more_ico_position { float: right}
+.opinion_area .editorial_title { margin-top: 20px; text-align: center; font-size: 1.25rem; color: #004ea2; letter-spacing: -1.8px}
+
+.opinion_area .opinion_list_container {margin-top: 28px; width: 100%; align-items: center}
+.opinion_area .opinion_list_container .opinion_thumb {width: 69px; height: 67px; position: relative; border-radius: 45px; margin-right: 25px}
+.opinion_area .opinion_list_container .media-body {}
+.opinion_area .opinion_list_container .media-body p {font-size: 0.875rem; color: #898989; letter-spacing: -1px; margin-bottom: 0}
+.opinion_area .opinion_list_container .media-body span {font-size: 1rem; color: #004ea2; letter-spacing: -1px; font-weight: 500; max-height: 48px; overflow: hidden}
+
+.center_line {padding: 30px 0; border-bottom: 2px #363636 solid; width: 100%; margin-bottom: 50px}
+.center_line_02 {padding: 30px 0; border-bottom: 2px #363636 solid; width: 100%; margin-bottom: 30px}
+
+.contents_title_style01 {width: 100%; padding: 15px 0}
+.contents_title_style01 h5 {font-size: 1.5rem; letter-spacing: -1.5px}
+.bigdata_contents_area {width: 100%; height: 340px; border: 1px #d7d7d7 solid; margin-top: 15px}
+
+.report_news .contents_title_style02 {width: 100%; padding: 15px 0 5px 0; border-bottom: 1px #d7d7d7 solid}
+.contents_title_style02 h5 {font-size: 1.5rem; letter-spacing: -1.5px}
+
+
+/*빅데이터기사 많이 본 기사*/
+.pop_news_area {margin-top: 30px}
+.pop_news_area .popnews_num {align-self: center; margin-right: 20px; font-size: 1.5rem}
+.pop_news_area .popnews_title {width: 100%; height: 141px; align-self: center; overflow: hidden}
+.pop_news_area .popnews_title p {font-size: 1.25rem; font-weight: 500; line-height: 1.5; letter-spacing: -1.5px; align-self: center; max-height: 60px; overflow: hidden; margin-bottom: 10px}
+.pop_news_area .popnews_title span {font-size: 0.875rem; color: #7d7d7d; letter-spacing: -1.5px}
+.pop_news_area .popnews_thumb {width: 229px; height: 146px; align-self: center; margin-left: 25px}
+
+.popnews_under_list {margin-top: 42px}
+.popnews_under_list .popnews_list {padding-bottom: 12px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap}
+.popnews_under_list .popnews_list .underlist_num {font-size: 1.0625rem; margin-right: 15px}
+.popnews_under_list .popnews_list .underlist_title {font-size: 1.0625rem; letter-spacing: -1.5px}
+.popnews_under_list .popnews_list .underlist_title:hover {text-decoration: underline}
+.contents_title_style02 { width: 100%; padding: 0 0 5px 0; border-bottom: 1px #d7d7d7 solid}
+
+
+/*배너광고*/
+.banner_background {position: relative; width: 100%; height: 200px; left: 0; right: 0; background-color: #d7d7d7; margin-top: 60px; margin-bottom: 80px; display: flex; align-items: center}
+.banner_background .banner_area { margin-top: 60px; max-width: 1238px; margin: auto}
+.banner_background .banner_area img {width: 100%}
+
+
+/*포토/영상*/
+.second_container {position: relative; top: 150px}
+.photo_section {margin-top: 50px; position: relative}
+.photo_section .media_contents_area {width: 100%; height: 456px; position: relative}
+.photo_section .media_contents_area .photo_area_img {width: 100%; height: 456px;}
+.photo_section .media_contents_area .photo_area_img img {width: 100%; height: 456px; object-fit: cover; object-position: 0% 79%;}
+
+.photo_section .contents_title_style02 {width: 100%; padding: 0 0 5px 0; border-bottom: 1px #d7d7d7 solid; display: flex; justify-content: space-between}
+.photo_section .photo_title {font-size: 2.125rem; font-weight: 500; letter-spacing: -2.8px; height: auto; line-height: 1.4; padding-top: 20px; max-height: 114px}
+.photo_section .photo_txt {font-size: 1rem; letter-spacing: -1.5px; line-height: 1.8; color: #7d7d7d; margin-top: 30px; height: 140px; overflow: hidden}
+
+.swiper-arrow-next {position: absolute; right: 0; z-index: 999; top: 220px; cursor: pointer}
+.swiper-arrow-prev {position: absolute; left: 0; z-index: 999; top: 220px; cursor: pointer}
+
+.video_container {margin-top: 30px}
+.video_container .video_con_box {width: 100%; height: 210px; background-color: #fff; position: relative}
+.video_container .video_con_box .video_img_box {width: 100%; height: 133px}
+.video_container .video_con_box .video_title {width: 100%; padding: 10px 0; height: 60px; overflow: hidden}
+.video_container .video_con_box .video_title p {letter-spacing: -1.5px; font-weight: 500}
+.video_container .video_con_box .mdnews_sec_title {width: 50px; background-color: #fff; position: absolute; top: -1px; left: -1px; padding: 8px; text-align: center}
+
+
+/*보도자료/리포터*/
+.report_contents {}
+.report_contents .report_news {}
+.report_contents .report_news .col-12 {padding: 0 10px}
+.report_contents .report_news .report_con_news {width: 100%; height: 270px; border: 1px #d7d7d7 solid; background-color: #fff; margin-top: 20px}
+.report_contents .report_news .report_con_news .report_img_area {position: relative; width: 100%; height: 149px}
+.report_contents .report_news .report_con_news .report_title { padding: 10px}
+.report_contents .report_news .report_con_news .report_title .contents_title {font-size: 1.0625rem; color: #363636; letter-spacing: -1.5px; line-height: 1.2; height: 40px; overflow: hidden; display: block}
+.report_contents .report_news .report_con_news .report_title .name_tag {font-size: 0.875rem; color: #858585; letter-spacing: -1.5px; display: block; padding-top: 15px; font-weight: 300}
+.report_contents .report_news .report_con_news .report_title .date_tag {font-size: 0.875rem; color: #858585; letter-spacing: -1.5px; display: block; font-weight: 300}
+
+.reporters_area {width: 100%; height: 323px; border: 1px #d7d7d7 solid; background-color: #fff; padding: 20px; margin-bottom: 30px}
+.reporters_area .reporters_list_area {padding: 57px 0 15px; display: flex}
+.reporters_area .reporters_list_area a {width: 100%}
+.reporters_area .reporters_list_area .reporter_area {display: flex; flex-direction: column; text-align: center; width: 120px;margin: auto}
+.reporters_area .reporters_list_area .reporter_area .reporter_img {width: 112px; height: 112px; position: relative; overflow: hidden; border-radius: 65px; display: block; margin: auto}
+.reporters_area .reporters_list_area .reporter_area .reporter_name_01 { padding-top: 5px}
+.reporters_area .reporters_list_area .reporter_area .reporter_name_01 span:first-child {font-size: 0.875rem; padding-right: 5px; color: #898989}
+.reporters_area .reporters_list_area .reporter_area .reporter_name_01 span:last-child {font-size: 1rem; color: #004ea2}
+
+.reporters_area .contents_title_style02 {display: flex; justify-content: space-between; width: 100%; padding: 0 0 5px 0; border-bottom: 1px #d7d7d7 solid}
+.reporters_area .contents_title_style02 h5 {}
+.reporters_area .contents_title_style02 .rolling_arrow {}
+.swiper_arrow_prev {display: inline-block; margin-right: 10px; cursor: pointer}
+.swiper_arrow_next {display: inline-block; cursor: pointer}
+
+.forum_section {width: 100%; height: 284px; border: 1px #d7d7d7 solid; padding: 20px}
+.forum_section .forum_editorial {padding-bottom: 10px; border-bottom: 1px #d7d7d7 solid; font-size: 1.125rem}
+.forum_section .forum_editorial a {}
+.forum_section .forum_editorial a .more_ico_position { float: right}
+.forum_section .editorial_title { margin-top: 20px; text-align: center; font-size: 1.25rem; color: #004ea2; letter-spacing: -1.8px}
+.forum_section .forum_title_container {display: flex; justify-content: space-between; padding-bottom: 5px; border-bottom: 1px #d7d7d7 solid}
+.forum_section .forum_title_container h6 {font-size: 1.125rem; letter-spacing: -1.5px}
+.forum_banner_container { margin-top: 50px !important}
+.forum_banner_container .swiper-wrapper .swiper-slide a img {display: block; margin: auto}
+
+
+/*연재*/
+.series_area {}
+.series_area .contents_title_style02 {width: 100%; padding: 0 0 5px 0; border-bottom: 1px #d7d7d7 solid}
+.series_area .series_news_box {width: 100%; height: 300px; border: 1px #d7d7d7 solid; background-color: #fff; margin-top: 30px}
+.series_area .series_news_box {position: relative}
+.series_area .series_news_box .series_newsImg_box {width: 100%; height: 213px; position: relative; overflow: hidden}
+.series_area .series_news_box .series_title_box {padding: 10px; display: flex; align-items: center; height: 85px; overflow: hidden}
+.series_area .series_news_box .series_title_box .series_news_title { font-size: 1.125rem; letter-spacing: -1.5px; font-weight: 500; line-height: 1.4; max-height: 44px}
+.series_area .series_news_box .spnews_sec_title { width: 130px; background-color: #28a0ee; padding: 5px; position: absolute; top: 0; left: 0; text-align: center}
+.series_area .series_news_box .spnews_sec_title span {color: #fff; font-size: 0.9375rem; letter-spacing: -1.3px}
+
+
+/*하단배너광고*/
+.banner_background_02 {position: relative; width: 100%; height: auto; left: 0; right: 0; background-color: #d7d7d7; margin-top: 120px; margin-bottom: 90px; display: flex; align-items: center; padding: 30px 0 }
+.banner_background_02 .banner_area { margin-top: 60px; max-width: 1238px; margin: auto}
+.banner_background_02 .banner_area div {margin-bottom: 30px; width: 100%; height: auto}
+.banner_background_02 .banner_area div a {}
+.banner_background_02 .banner_area div a img {width: 100%; height: auto}
+.line_horizon_set {width: 100%; margin-bottom: 30px; border-bottom: 2px #363636 solid}
+.banner_background_02 .banner_area div:nth-child(5), 
+.banner_background_02 .banner_area div:nth-child(6),
+.banner_background_02 .banner_area div:nth-child(7),
+.banner_background_02 .banner_area div:nth-child(8) {margin-bottom: 0}
+
+
+/*footer*/
+.footer {margin-top: 30px; padding-bottom: 50px}
+.footer .footer_logo {margin-top: 43px}
+.footer .footer_copyright {width: 100%; margin-left: 20px}
+.footer .footer_copyright .info_list {padding-bottom: 30px}
+.footer .footer_copyright .info_list ul {display: flex; align-items: center}
+.footer .footer_copyright .info_list ul a li {list-style: none; font-size: 0.9375rem; letter-spacing: -1.2px }
+.footer .footer_copyright .info_list ul a li::after {content: 'ㅣ'; padding-left: 15px; padding-right: 15px}
+.footer .footer_copyright .info_list ul a:last-child li::after {content: ''}
+
+.footer .footer_copyright .copyright_container {}
+.footer .footer_copyright .copyright_container ul {display: flex; align-items: center; padding-bottom: 5px}
+.footer .footer_copyright .copyright_container ul li {font-size: 0.9375rem; letter-spacing: -1.2px; color: #707070; font-size: 0.875rem}
+.footer .footer_copyright .copyright_container ul li::after {content: 'ㅣ'; padding-left: 15px; padding-right: 15px}
+.footer .footer_copyright .copyright_container ul li:last-child::after {content: ''; }
+
+.footer .footer_copyright .comission_container {display: flex; align-items: center; margin-top: 30px}
+.footer .footer_copyright .comission_container a {}
+.footer .footer_copyright .comission_container a img {margin-right: 30px}
+
+.footer .footer_copyright .moblie_copyright_container {display: none}
+.footer .footer_copyright .moblie_copyright_container ul {display: flex; align-items: center; padding-bottom: 5px}
+.footer .footer_copyright .moblie_copyright_container ul a{ }
+.footer .footer_copyright .moblie_copyright_container ul a li {font-size: 0.9375rem; letter-spacing: -1.2px}
+.footer .footer_copyright .moblie_copyright_container ul a li::after {content: 'ㅣ'; padding-left: 15px; padding-right: 15px}
+.footer .footer_copyright .moblie_copyright_container ul a:last-child li::after {content: ''}
+.moblie_copyright_container p {letter-spacing: -1.2px; padding-top: 30px; display: none}
+
+.editorial_pagination {position: relative !important }
+.editorial_pagination span {margin-right: 5px}
+
+
+/**************************************
+              섹션 메인화면              
+**************************************/
+
+/*헤더*/
+.top_header_area .center_logo_area h4 {font-size:2.3125rem; font-weight: 600; letter-spacing: -1.5px }
+.top_header_area .left_ad_area .left_top_logo {}
+
+
+/*탑뉴스*/
+.top_news_contents .top_news_02 {background-color: #fff; width: 100%; height: 606px}
+.top_news_contents .top_news_02 .top_img_area {width: 100%; height: 370px; position: relative}
+.top_news_contents .top_news_02 .sub_topNews_title {white-space: inherit; line-height: 1.3; height: 93px; overflow: hidden; font-size: 2.25rem; letter-spacing: -3.5px; margin-top: 20px; font-weight: 400}
+.top_news_contents .top_news_02 .topNews_date_area {font-size: 0.875rem; color: #898989 }
+.top_news_contents .top_news_02 .topnews_txt_area {font-size: 1rem; color: #7d7d7d; font-weight: 400; margin-top: 18px; letter-spacing: -1px; line-height: 1.7; height: 75px; overflow: hidden}
+.top_news_contents .section_right_topBox { width: 100%; height: 182px; overflow: hidden; margin-bottom: 30px}
+.top_news_contents .section_right_topBox:last-child {margin-bottom: 0}
+.top_news_contents .section_right_topBox .right_topNews_title {font-size: 1.25rem; color: #363636; letter-spacing: -1.5px; line-height: 1.4; margin-bottom: 12px; font-weight: 500}
+.top_news_contents .section_right_topBox .right_topNews_articleContainer {}
+.top_news_contents .section_right_topBox .right_topNews_articleContainer .right_topThumb_box {width: 162px; height: 120px}
+.top_news_contents .section_right_topBox .right_topNews_articleContainer .right_topNews_txtbox { margin-left: 15px}
+.top_news_contents .section_right_topBox .right_topNews_articleContainer .right_topNews_txtbox span { font-size: 0.875rem; color: #898989; line-height: 1.7; letter-spacing: -1.2px; display: block}
+
+
+/*리스트*/
+.list_contents_container {width: 100%; height: auto; margin-left: -2px}
+.list_contents_container .section_left_container {padding-right: 64px; /*border-right: 1px #d7d7d7 solid; */width: 856px; float: left}
+.list_contents_container .section_left_container .section_main_newslist_container {margin-bottom: 45px}
+.list_contents_container .section_left_container .section_main_newslist_container .list_thumbnail_box {width: 135px; height: 107px; margin-right: 25px}
+.list_contents_container .section_left_container .section_main_newslist_container .list_news_contents p {font-size: 1.125rem; letter-spacing: -1.5px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 15px}
+.list_contents_container .section_left_container .section_main_newslist_container .list_news_contents .list_news_txt {font-size: 0.875rem; color: #707070; line-height: 1.5; display: block; letter-spacing: -0.7px; height: 45px; overflow: hidden}
+.list_contents_container .section_left_container .section_main_newslist_container .list_news_contents .list_news_byline {font-size: 0.875rem; color: #707070; letter-spacing: -0.7px}
+
+.list_contents_container .section_right_container {float: left; padding-left: 60px; width: 360px; border-left: 1px #d7d7d7 solid; }
+.list_contents_container .section_right_container .right_banner_area {width: 100%; height: 250px; margin-bottom: 30px}
+.list_contents_container .section_right_container .right_mainNews_area {width: 100%; margin-bottom: 15px}
+.list_contents_container .section_right_container .right_mainNews_area p {font-size: 1.0625rem; font-weight: 600; letter-spacing: -1.2px; line-height: 1.5; margin-bottom: 10px; height: 50px; overflow: hidden}
+.list_contents_container .section_right_container .right_mainNews_area .mainnews_area {margin-bottom: 30px}
+.list_contents_container .section_right_container .right_mainNews_area .mainnews_area .main_news_thumbBox {width: 150px; height: 90px; margin-right: 15px}
+.list_contents_container .section_right_container .right_mainNews_area .mainnews_area .media-body .main_news_txt {font-size: 0.875rem; color: #707070; letter-spacing: -1.2px; line-height: 1.7; display: block; height: 90px; overflow:hidden}
+
+.list_contents_container .right_popNews_area {}
+.list_contents_container .right_popNews_area .popNews_title_container {width: 100%; padding-bottom: 10px; border-bottom: 2px #363636 solid}
+.list_contents_container .right_popNews_area .popNews_title_container p {font-size: 1.5rem; margin-bottom: 0; letter-spacing: -1.7px}
+
+.list_contents_container .right_popNews_area .popNews_list_container {}
+.list_contents_container .right_popNews_area .popNews_list_container .pop_news_contents_box {margin-bottom: 15px}
+.list_contents_container .right_popNews_area .popNews_list_container .pop_news_contents_box:first-child {}
+.list_contents_container .right_popNews_area .popNews_list_container .pop_news_contents_box .pop_num { font-size: 1.25rem; font-weight: 600; align-self: center; margin-right: 20px}
+.list_contents_container .right_popNews_area .popNews_list_container .pop_news_contents_box .pop_news_title {font-size: 0.9375rem; letter-spacing: -1.5px; line-height: 1.5; align-self: center;max-height: 64px; overflow: hidden}
+.list_contents_container .right_popNews_area .popNews_list_container .pop_news_contents_box .pop_news_imgBox {width: 90px; height: 69px; align-self: center; margin-left: 15px}
+
+.under_line02 {margin-top: 100px}
+.footer_container {margin-top: 50px; position: relative}
+
+
+/*페이지네이션*/
+.list-pagination {width: 100%; position: relative; float: left; padding: 15px 0; margin-top: 30px; margin-bottom: 50px; text-align: center}
+.pagination-list {padding-left: 0 }
+.pagination-list li {display: inline-block}
+.pagination-list li a{display: inline-block; padding: 9px; font-size: 14px; border-radius: 27px; vertical-align: middle; color: #363636; transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out; width: 41px; height: auto}
+.pagination-list li a:hover {background: #eee; font-weight: 600; color: #3e71d8}
+.pagination-list li a.active {background: #eee; font-weight: 600; color: #3e71d8}
+
+.pagination-list .arrow-list a {border-radius: 0; width: 40px; height:auto}
+.pagination-list .arrow-list a:hover {background: #eee; font-weight: normal}
+
+.m_line_01 {display: none}
+.m_section_title {color: #28a0ee; font-size: 1.125rem !important; display: block; text-align: center; margin-top: 10px; display: none}
+.section_main_topLogo a img {display: none}
+
+
+/*모바일 검색*/
+.search-bar { padding: 15px; border: 1px #d7d7d7 solid; margin: 15px 0 0; width: 100%}
+.input-stand-01 {width: 100%; padding: 6px; border: 1px #d7d7d7 solid; background: #f7f7f7;}
+
+
+/**************************************
+        스페셜 리포트 메인화면              
+**************************************/
+
+.location_area {margin-top: 10px; padding: 20px 0}
+.location_area span {font-size: 0.8125rem; letter-spacing: -1.5px}
+
+.special_report_container {/*margin-top: 50px*/}
+.section_left_container .series_news_container {margin-bottom: 30px}
+.section_left_container .series_news_container .special_newsTitle {font-size: 1.375rem; font-weight: 600; letter-spacing: -1.5px; padding-bottom: 7px; border-bottom: 2px #363636 solid; color: #004ea2; margin-bottom: 15px}
+
+.special_thumb_box {width: 115px; height: 87px; margin-right: 15px}
+.special_news_body {}
+.special_news_body p {font-size: 1rem; letter-spacing: -1.5px; font-weight: 500; height: 74px; overflow: hidden; margin-bottom: 0}
+
+.special_news_underlist_container {margin-top: 15px}
+.special_news_underlist_container a span { background: url(../images/ico/bullet_03.png)no-repeat 0; padding-left: 15px; width: 353px; font-size: 0.8rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; letter-spacing: -0.8px; display: block; padding-bottom: 7px}
+.special_news_underlist_container a span:hover {text-decoration: underline}
+
+
+/**************************************
+           오피니언 메인화면              
+**************************************/
+.opinion_container {margin-bottom: 20px}
+.opinion_main_title {margin-bottom: 50px}
+.opinion_main_title p {font-size: 1.75rem; font-weight: 600; letter-spacing: -1.5px; padding-bottom: 15px; border-bottom:2px #363636 solid }
+.opinion_article_container {margin-bottom: 30px}
+.opinion_article_container .opinion_thumb_box {width: 124px; height: 105px; margin-right: 15px}
+.opinion_article_container .opinion_article_titleBox {}
+.opinion_article_container .opinion_article_titleBox span {font-size: 1.25rem; letter-spacing: -1.5px; font-weight: 500}
+
+.opinion_underNews_container {margin-bottom: 30px}
+.opinion_underNews_container .opinion_under_thumbBox {width: 172px; height: 134px; margin-right: 15px}
+.under_article_container {}
+.under_article_container .under_media_title01 {font-size: 0.875rem; color: #898989; letter-spacing: -1.3px; margin-bottom: 7px}
+.under_article_container .under_media_title02 {font-size: 1.125rem; font-weight: 500; letter-spacing: -1.7px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 10px}
+.under_article_container .under_media_title03 {font-size: 0.875rem; color: #898989; letter-spacing: -1.3px; display: block; line-height: 1.5; height: 43px; overflow: hidden; font-weight: 400}
+.under_article_container .under_media_title04 {margin-top: 10px; font-size: 0.875rem; color: #898989; letter-spacing: -1px; display: block}
+
+
+/**************************************
+           AT미디어센터 메인화면              
+**************************************/
+.top_news_contents_02 {margin-top: 30px; height: 462px; margin-bottom: 10px}
+.md_news_area_03 {margin-top: 10px}
+.top_news_contents_02 .top_news_02 {background-color: #fff; width: 100%; height: 462px}
+.top_news_contents_02 .top_news_02 .top_img_area {position: relative; width: 100%; height: 462px}
+
+.top_news_contents_02 .top_news_02 .top_img_area .thumb_title_back {width: 100%; height: 248px; padding: 25px; position: absolute; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(7,7,7,1) 116%,rgba(7,7,7,1) 100%); display: flex; align-items: flex-end}
+.top_news_contents_02 .top_news_02 .top_img_area .thumb_title_back p { color: #fff; font-size: 2.3125rem; letter-spacing: -2.3px; margin-bottom: 0; height: 60px; overflow: hidden; height: 96px; overflow: hidden; line-height: 1.4; display: flex; align-items: center}
+
+.top_news_right02 {width: 100%; height: 462px; background-color: #fff}
+.top_news_right02 .media_right_layout {padding: 0 10px}
+.top_news_right02 a {margin-bottom: 30px; width: 100%; float: left}
+.top_news_right02 a .right_top_news_02 {width: 100%; height: 216px; position: relative}
+.top_news_right02 a .right_top_news_02 .thumb_title_back {width: 100%; height: 148px; padding: 15px; position: absolute; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(7,7,7,1) 65%,rgba(7,7,7,1) 100%); display: flex; align-items: flex-end}
+.top_news_right02 a .right_top_news_02 .thumb_title_back p {color: #fff; font-size: 1.25rem; letter-spacing: -1.5px; margin-bottom: 0; height: 60px; overflow: hidden}
+
+.media_img_container {width: 100%; height: 250px; position: relative; margin-bottom: 30px}
+.media_img_container .media_news_bar { width: 100%; height: 64px; background-color: rgba(17, 17, 17, 0.8); position: absolute; bottom: 0; padding: 10px; display: flex; align-items: center}
+.media_img_container .media_news_bar p { color: #fff; font-weight: 600; font-size: 0.875rem; max-height: 45px; overflow: hidden; margin: 0;}
+
+.more_btn_01 {width: 100%; padding: 15px 0; border: 1px #d7d7d7 solid; cursor: pointer; margin-bottom: 100px; text-align: center; background-color: #f7f7f7; transition: background-color .3s}
+.more_btn_01 span { font-size: 0.8725rem; font-weight: 600}
+
+
+/**************************************
+           섹션 뉴스리스트              
+**************************************/
+.section_news_title {margin-bottom: 50px; margin-top: 20px}
+.section_news_title p {font-size: 2.375rem; font-weight: 400; letter-spacing: -1.5px; padding-bottom: 15px; border-bottom:2px #363636 solid }
+
+
+/**************************************
+           기사상세 화면             
+**************************************/
+
+/*기사제목영역*/
+.article_title_area {width: 100%; padding: 20px 0; border-bottom: 2px #363636 solid; margin-bottom: 30px}
+.article_title_area h6 {font-size: 2.5rem; font-weight: 400; letter-spacing: -3.5px}
+.article_title_area .article_byline {}
+.article_title_area .article_byline span {font-size: 0.75rem; font-weight: 400; letter-spacing: -0.2px; color: #898989; margin-top: 60px; display: inline-block}
+
+.article_share_contents_container {width: 100%; display: flex; align-items: center; justify-content: space-between}
+.article_share_contents_container .share_inline {margin-top: 20px}
+.article_share_contents_container .share_inline a {display: inline-block; margin-right: 15px}
+.article_share_contents_container .share_inline a img {}
+
+.control_option {}
+.control_option a {display: inline-block; margin-right: 5px}
+.control_option a:last-child {margin-right: 0}
+
+
+/*기사본문*/
+.article_container_layout {margin-top: 60px}
+.article_container_layout .article_txt_container {margin-bottom: 60px}
+.article_container_layout .article_txt_container .sub_article_titleArea {}
+.article_container_layout .article_txt_container .sub_article_titleArea p {padding-bottom: 3px; border-left: 4px #004ea2 solid; margin-bottom: 0; padding-left: 10px; letter-spacing: -0.8px; font-size: 1.0625rem; font-weight: 500}
+.article_container_layout .article_txt_container .sub_article_titleArea p:last-child {padding-bottom: 0}
+.article_container_layout .article_txt_container .article_img_container { margin-top: 60px; position: relative; display: block}
+.article_container_layout .article_txt_container .article_img_container img {display: block; margin: auto}
+.article_container_layout .article_txt_container p {font-size:1.125rem; letter-spacing: -1px; line-height: 1.9; font-weight: 400}
+
+
+/*관련기사*/
+.relation_news_container { }
+.relation_news_container p {font-size: 1.125rem; font-weight: 500; letter-spacing: -1.5px; color: #3e71d8; margin-bottom: 15px }
+.relation_news_container .relation_article_listArea {}
+.relation_news_container .relation_article_listArea p {background: url(../images/ico/bullet_03.png)no-repeat 0; padding-left: 15px; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 7px; font-size: 1rem; font-weight: 400; color: #363636}
+.relation_news_container .relation_article_listArea p:hover {text-decoration: underline}
+
+
+/*기자정보*/
+.reporter_info_container {margin-top: 100px}
+.reporter_info_container .reporter_media {align-items: center}
+.reporter_info_container .reporter_img_box {width: 70px; height: 70px; border-radius: 35px; margin-right: 15px}
+.reporter_info {margin-top: 10px}
+.reporter_info .reporter_top_info {display: flex; align-items: center; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px #d7d7d7 solid}
+.reporter_info .reporter_top_info .reporter_org {}
+.reporter_info .reporter_top_info .reporter_org span:first-child {font-size:0.9375rem; font-weight: 500; margin-right: 10px }
+.reporter_info .reporter_top_info .reporter_org span:last-child {font-size: 0.9375rem; font-weight: 400}
+.reporter_more_article {}
+.reporter_more_article span { font-size: 0.875rem; color: #898989; letter-spacing: -1.2px; display: flex; align-items: center}
+.reporter_more_article span::after {background: url(../images/ico/more_arrow_ico.png)no-repeat; content: ''; width: 10px; height: 15px; margin-left: 10px}
+.reporter_under_info {padding-top: 10px; display: flex; align-items: center; justify-content: space-between}
+.reporter_under_info a span {font-size: 0.9375rem; font-weight: 400}
+.reporter_copyright {font-size: 0.875rem; letter-spacing: -1.2px; color: #898989}
+
+
+/*댓글*/
+.reply_container {margin-top: 70px}
+.reply_container .reply_title_wrap {width: 100%; padding-bottom: 10px; border-bottom: 1px #d7d7d7 solid}
+.reply_container .reply_title_wrap p {font-size: 1.25rem; font-weight: 400; letter-spacing: -1.2px}
+.reply_txt_area {margin-top: 15px}
+.reply_txt_area .password_area {margin-bottom: 12px}
+.reply_txt_area .password_area .user_form {border-radius: 0; padding: 10px}
+.reply_txt_area .txtarea_box {height: 120px; padding: 10px; font-size: 0.875rem; border-radius: 0; resize: none}
+
+.reply_guide_wrap {width: 100%; display: flex; justify-content: space-between; border: 1px #d7d7d7 solid; border-top: 0; padding: 12px}
+.reply_guide_wrap .guide_wrap {}
+.reply_guide_wrap .guide_wrap p {font-size: 0.8125rem; letter-spacing: -1px; padding-bottom: 4px}
+
+.reply_under_set {}
+.reply_under_set .reply_txt_limit {margin-right: 15px}
+.reply_under_set .reply_txt_limit span {font-size: 0.875rem; letter-spacing: -1.2px}
+.reply_under_set .reply_txt_limit span:first-child {font-weight: 500}
+.reply_under_set .reply_txt_limit span:last-child {color: #898989}
+.point_color_02 {background: #ebebeb; border-color: #ebebeb; color: #363636; padding: 5px 20px}
+.point_color_02:hover {background: #c4c4c4; color: #363636}
+
+.reply_txt {margin-top: 25px}
+.reply_txt .reply_title_set {padding-bottom: 15px}
+.reply_txt .reply_title_set span {}
+.reply_txt .reply_title_set span:first-child {font-size: 0.9375rem; letter-spacing: -1px; font-weight: 600; margin-right: 10px}
+.reply_txt .reply_title_set span:last-child {font-size: 0.875rem; letter-spacing: -0.5px; color: #898989; font-weight: 300}
+
+.reply_txt .reply_contents {padding-bottom: 12px; border-bottom: 1px #d7d7d7 solid}
+.reply_txt .reply_contents p {font-size: 0.875rem; letter-spacing: -1px}
+
+
+/*연관기사*/
+.related_article_wrap {margin-top: 120px}
+.related_article_wrap .related_title_wrap {padding-bottom: 12px; border-bottom: 1px #d7d7d7 solid}
+.related_article_wrap .related_title_wrap p {font-size: 1.5625rem; letter-spacing: -1.5px; font-weight: 500}
+
+.related_news_box {width: 100%; height: 247px; background-color: #fff}
+.related_news_box .related_img_box {width: 100%; height: 165px; margin-top: 30px}
+.related_news_box .related_news_title {width: 100%; padding: 12px 0}
+.related_news_box .related_news_title p {font-size: 1rem; font-weight: 600; letter-spacing: -1.5px; height: 48px; overflow: hidden}
+.ad_banner_area_01 {width: 100%; height: auto; margin-bottom: 50px; margin-top: 50px}
+
+/*전문가의 목소리*/
+.right_opinion_wrap .opinion_right_title {width: 100%; padding-bottom: 10px; border-bottom: 2px #363636 solid; display: flex; justify-content: space-between}
+.right_opinion_wrap .opinion_right_title p {font-size: 1.5rem; margin-bottom: 0; letter-spacing: -1.7px}
+
+.opinion_list_wrap {margin-top: 20px}
+.opinion_list_wrap .right_opinion_list {align-items: center; margin-top: 25px}
+.opinion_list_wrap .right_opinion_list .opnion_list_thumBox {width: 69px; height: 67px; position: relative; border-radius: 45px; margin-right: 25px}
+.opinion_list_wrap .right_opinion_list .opnion_list_txtBox {}
+.opinion_list_wrap .right_opinion_list .opnion_list_txtBox p {font-size: 0.875rem; letter-spacing: -1.2px; color: #898989; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 205px}
+.opinion_list_wrap .right_opinion_list .opnion_list_txtBox .txtBox_title {line-height: 1.4; height: 43px; overflow: hidden}
+.opinion_list_wrap .right_opinion_list .opnion_list_txtBox .txtBox_title span {font-size: 0.9375rem; letter-spacing: -1.2px}
+.opinion_list_wrap .right_opinion_list .opnion_list_txtBox .txtBox_title span:first-child {font-weight: 500}
+.opinion_list_wrap .right_opinion_list .opnion_list_txtBox .txtBox_title span:last-child {font-weight: 400; color: #004ea2}
+
+

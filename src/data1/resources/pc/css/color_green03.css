@@ -1,0 +1,156 @@
+﻿@charset "utf-8";
+
+/* û�ϻ� bgr */
+
+/* MENU */
+.header02 .head_menu{border-top:3px solid #23a0bf}
+
+/* �޴�5 */
+#nav5 .navbar{border-top:2px solid #23a0bf;border-bottom:2px solid #23a0bf}
+
+/*** 3.��ü��纸�� ***/
+.news_list .date_tab ul{background:#23a0bf !important}
+.news_list .sch_date{background:#23a0bf !important;border-bottom:1px solid #23a0bf !important}
+
+/*** 5.�˻���� ***/
+.search_con .sch_box2 dl.col1 button.on{background:#23a0bf;border:1px solid #23a0bf}
+.search_con .sch_box2 dl.col2 button.on{background:#23a0bf;border:1px solid #23a0bf}
+
+/*** 9. 10. 11. Ŀ��Ƽ ����Ʈ(�ؽ�Ʈ��, ������, �̹�����) ***/
+.community_list_con .cmt_hd_fnc li button{background:#23a0bf}
+.community_list_con .cmt_li_con .tab_menu ul li.on a{color:#23a0bf}
+
+/* Ŀ�´�Ƽ �� ����Ʈ */
+.community_main_con .cmt_li_con .tab_menu ul li.on a{color:#23a0bf}
+
+/*** 41. PDF ���麸�� ***/
+.pdf_list_sec .pdf_list .pdf_top .date_select dl dd.calendar_btn{background:#23a0bf}
+
+/* �ϴ� ���� �޴� ���� ����(����) */
+.service aside nav{border-top:3px solid #23a0bf}
+.service aside .link > ul > li > a:hover{background:#23a0bf url('../images/icon/nv_arrow1.png') no-repeat 95% center;border-top:1px solid #23a0bf;border-bottom:1px solid #23a0bf}
+
+/*** �޴� ��Ų A ***/
+.header02 .navbar ul li.on a{color:#23a0bf}
+
+/* �޴�2 */
+.header02 #nav2{background:#23a0bf}
+
+/* �޴�4 */
+.header02 #nav4 .navbar{border:1px solid #2095b3;background:#23a0bf}
+
+/* �޴�5 */
+.header02 #nav5 .navbar{border-top:2px solid #23a0bf;border-bottom:2px solid #23a0bf}
+
+/* �޴�7 */
+.header02 #nav7{border-bottom:2px solid #23a0bf}
+
+/* �޴�8 */
+.header02 #nav8{border-bottom:3px solid #23a0bf}
+
+/* �޴�9 */
+.header02 #nav9{background:#23a0bf url('../images/nav_bg.png')repeat-x}
+
+/*** �޴� ��Ų B ***/
+.header01 .navbar ul li.on a{color:#23a0bf}
+
+/* �޴�2 */
+.header01 #nav2{background:#23a0bf}
+
+/* �޴�4 */
+.header01 #nav4 .navbar{border:1px solid #2095b3;background:#23a0bf}
+
+/* �޴�5 */
+.header01 #nav5 .navbar{border-top:2px solid #23a0bf;border-bottom:2px solid #23a0bf}
+
+/* �޴�7 */
+.header01 #nav7{border-bottom:2px solid #23a0bf}
+
+/* �޴�8 */
+.header01 #nav8{border-bottom:3px solid #23a0bf}
+
+/* �޴�9 */
+.header01 #nav9{background:#23a0bf url('../images/nav_bg.png')repeat-x}
+
+/* Ŀ�´�Ƽ ���� */
+.community_cotent article{border-top:2px solid #23a0bf}
+
+/***** Ŀ�´�Ƽ *****/
+.community .sub_title span{border-left:13px solid #23a0bf}
+
+/* Ŀ�´�Ƽ ���� ����(����) */
+.community aside .nav_hd{background:#23a0bf}
+
+/* Ŀ�´�Ƽ ���� */
+.best_art_con{border-top:2px solid #23a0bf}
+
+/***** ���������� *****/
+.mypage .sub_title span{border-left:13px solid #23a0bf}
+
+/* ���� �� ���� */
+.subpage .rank_li_item dl dt em{color:#23a0bf}
+
+/* ����¡ */
+.paging a.on{background:#23a0bf;border:1px solid #23a0bf}
+
+/***** ���������� *****/
+.sub_title span{border-left:13px solid #23a0bf}
+
+/*** 8. Ŀ�´�Ƽ ����(2) ***/
+.community_cotent2 article{display:inline-block;width:100%;border-top:2px solid #23a0bf}
+
+/* ���� �� ���� */
+.main_text .rank_li_item dl dt em{color:#23a0bf}
+.main_image .rank_li_item dl dt em{color:#27ae60}
+
+/* Ŀ�´�Ƽ ���� ����(����) */
+.community aside .nav_hd{background:#23a0bf url('../images/nv_pattern01.png') !important;border:2px solid #23a0bf}
+
+/* �ǽð� ���� */
+.news_list .issue_hd{background:#23a0bf}
+.main_image .issue_hd{background:#23a0bf}
+
+/* ���������� */
+.mypage aside .nav_hd{background:#23a0bf}
+.mypage .snb .tit_bul02{background:#23a0bf}
+.mypage_con .mypage_top{border-top:2px solid #23a0bf}
+.mypage .member_login_box dl dt{color:#23a0bf}
+
+/* �޴� hover */
+.navbar ul li a:hover{color:#23a0bf}
+
+/* �������� */
+aside section h2 .tit_hd{border-bottom:3px solid #23a0bf}
+.hotChannel h2, .movie h2, .photo h2{color:#23a0bf !important}
+
+/* ����޴� */
+.sub_lnb li a:hover{color:#23a0bf !important}
+
+/* �̹����� �޴�ž */
+.header01 .head_menu{border-top:3px solid #23a0bf}
+
+/* ���䴺�� */
+.photo_news .sec_n1 h2 span{border-right:7px solid #23a0bf}
+.movie_news .sec_n1 h2 span{border-right:7px solid #23a0bf}
+
+/* Ŀ�´�Ƽ �ҷ�*/
+.community .snb ul li dl dt .tit_bul{background:#23a0bf}
+
+/*** ����� ***/
+section .slider-nav li.on a{color:#23a0bf}
+.more_btn3 button{background:#23a0bf}
+section .li_item dt em{color:#23a0bf}
+.header_top{float:left;position:relative;width:100%;min-height:50px;background:#23a0bf url('/m/img/top_bg.png')repeat-x center center}
+.header_top2 .menu_btn a{;background:#23a0bf}
+.header_top2 .search_btn a{;background:#23a0bf}
+.side_menu .menu_hd{background:#23a0bf}
+.side_menu2 .menu_hd{background:#23a0bf}
+.search_bar{float:left;height:50px;background:#23a0bf url('/m/img/top_bg.png')repeat-x center center}
+.search_bar input{border:1px solid #23a0bf}
+.search_bar2 input{border:1px solid #23a0bf;padding:0 5px;border:1px solid #23a0bf}
+.realtime h2 em{display:inline;background:#23a0bf;border:1px solid #23a0bf}
+.category_m{color:#23a0bf}
+.paging a.on{background:#23a0bf;color:#fff;border:1px solid #23a0bf}
+
+.main_text .rank_li_item dl dt em{color:#23a0bf !important}
+.navms .frame ul li.on a{color:#23a0bf}

@@ -1,0 +1,5 @@
+src > main.html
+src > main-mobile.html
+
+resources / style / css << 메인,모바일 css
+* scss <<  작업용으로 scss만 작업함 실제적용은 css

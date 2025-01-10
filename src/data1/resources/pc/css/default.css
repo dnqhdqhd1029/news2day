@@ -1,0 +1,486 @@
+﻿@charset "utf-8";
+
+/* Webfont - Nanum Gothic */
+
+@font-face {
+  font-family: "Nanum Gothic";
+  font-style: normal;
+  font-weight: normal;
+
+  src: url("../font/NanumGothic-Regular.eot");
+  src: url("../font/NanumGothic-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../font/NanumGothic-Regular.woff2") format("woff2"),
+    url("../font/NanumGothic-Regular.woff") format("woff"),
+    url("../font/NanumGothic-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NG_B";
+  font-style: normal;
+  font-weight: 700;
+
+  src: url("../font/NanumGothic-Bold.eot");
+  src: url("../font/NanumGothic-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/NanumGothic-Bold.woff2") format("woff2"),
+    url("../font/NanumGothic-Bold.woff") format("woff"),
+    url("../font/NanumGothic-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NG_EB";
+  font-style: normal;
+  font-weight: 900;
+
+  src: url("../font/NanumGothic-ExtraBold.eot");
+  src: url("../font/NanumGothic-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../font/NanumGothic-ExtraBold.woff2") format("woff2"),
+    url("../font/NanumGothic-ExtraBold.woff") format("woff"),
+    url("../font/NanumGothic-ExtraBold.ttf") format("truetype");
+}
+
+/*@font-face {*/
+/*font-family:'Open Sans';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*src: url('../font/Open_Sans/OpenSans-Regular.eot');*/
+/*src: url('../font/Open_Sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),*/
+/*url('../font/Open_Sans/OpenSans-Regular.woff2') format('woff2'),*/
+/*url('../font/Open_Sans/OpenSans-Regular.woff') format('woff'),*/
+/*url('../font/Open_Sans/OpenSans-Regular.ttf') format('truetype');*/
+/*}*/
+
+/* Reset */
+/*html {overflow-y:scroll}*/
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: top;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nanum Gothic", "나눔고딕", "NG", "Dotum", "돋움", "돋움체",
+    "AppleGothic", "Arial", "Open Sans", "HelveticaNeue", "Helvetica",
+    "sans-serif";
+  font-size: small; /*font-size:100%*/
+  line-height: 1;
+  word-break: break-all;
+  color: #000;
+  background: #fff;
+}
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+a,
+button,
+select {
+  margin: 0;
+  padding: 0;
+}
+body,
+input,
+textarea,
+select,
+button,
+table {
+  font-family: "Nanum Gothic", "나눔고딕", "NG", "Dotum", "돋움", "돋움체",
+    "AppleGothic", "Arial", "Open Sans", "HelveticaNeue", "Helvetica",
+    "sans-serif";
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "NG_B";
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+.blind {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: -1000em;
+}
+.clear {
+  clear: both;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+  background: transparent;
+}
+a:hover {
+  text-decoration: none !important;
+}
+label {
+  cursor: pointer;
+}
+img {
+  border: 0 none;
+  vertical-align: top;
+}
+img,
+video {
+  max-width: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a:active,
+a:hover,
+a:visited,
+a:link {
+  display: block;
+  outline: 0 none;
+  text-decoration: none;
+}
+a,
+img {
+  border: 0;
+  outline: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+button {
+  position: relative;
+  background: none;
+}
+figure {
+  margin: 0;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+fieldset {
+  border: 0;
+}
+em,
+address {
+  font-style: normal;
+}
+input,
+select,
+button {
+  cursor: pointer;
+}
+header a {
+  outline: none !important;
+}
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.ts {
+  transition: all 0.3s ease;
+}
+input {
+  background: #fff;
+}
+input:focus {
+  border: 1px solid #a6c8ff !important;
+}
+textarea:focus {
+  border: 2px solid #a6c8ff !important;
+}
+input[type="radio"] {
+  border: none !important;
+  outline: 0 !important;
+  box-shadow: none;
+  vertical-align: middle;
+}
+input[type="checkbox"] {
+  border: none !important;
+  outline: 0;
+  box-shadow: none;
+  vertical-align: middle;
+}
+input[type="file"]:focus {
+  border: 0 !important;
+}
+input,
+select,
+button {
+  font: inherit;
+}
+pre {
+  overflow-x: scroll;
+}
+b {
+  font-family: "NG_B";
+}
+
+/* 플레이스홀더 색상 */
+::-webkit-input-placeholder {
+  /* 크롬 4–56 */
+  color: #9e9e9e;
+}
+:-moz-placeholder {
+  /* 파이어폭스 4–18 */
+  color: #9e9e9e;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* 파이어폭스 19–50 */
+  color: #9e9e9e;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* 인터넷 익스플로러 10+ */
+  color: #9e9e9e;
+}
+::placeholder {
+  /* 파이어폭스 51+, 크롬 57+ */
+  color: #9e9e9e;
+  opacity: 1;
+}
+
+.ovf {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ADMIN POPUP */
+.wrapper_help {
+  background: #f1f2f4;
+}
+.admin_help_title01 {
+  font-size: 1.3em;
+  color: #e5004f;
+  font-family: "NG_B";
+  margin-top: 40px;
+  letter-spacing: -0.05em;
+}
+.admin_pop01 {
+  margin: 0 auto;
+  width: 700px;
+  background: #fff !important;
+  border: 1px solid #ccc;
+  letter-spacing: -0.05em;
+  padding: 0 20px 0 20px;
+  color: #333;
+}
+.admin_pop02 {
+  width: 685px;
+  background: #fff;
+  border: 1px solid #ccc;
+  letter-spacing: -0.05em;
+  padding: 0 10px 0 0;
+  color: #333;
+}
+.admin_pop03 {
+  width: 700px;
+  background: #fff;
+  border: 1px solid #ccc;
+  letter-spacing: -0.05em;
+  padding: 0 10px 0 0;
+  background: #fcfcfc;
+  color: #333;
+}
+.admin_pop04 {
+  width: 685px;
+  background: #fff;
+  border: 1px solid #ccc;
+  letter-spacing: -0.05em;
+  padding: 0 10px 0 0;
+  background: #fcfcfc;
+  color: #333;
+}
+.admin_pop0101 img {
+  margin: 10px 0 10px 10px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.admin_pop0102 {
+  margin: 20px 0 10px 10px;
+  line-height: 180%;
+}
+.admin_pop0102 span {
+  color: #19aae1;
+}
+.admin_pop0103 {
+  float: right;
+  margin-top: -30px;
+  border-top: 1px solid #666;
+  border-right: 1px solid #666;
+  border-left: 1px solid #666;
+  height: 26px;
+  line-height: 26px;
+  background: #888;
+  color: #fff;
+  padding: 0 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.admin_pop0103 a {
+  color: #fff;
+}
+.admin_pop0201 img {
+  margin: 20px 0 20px 20px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.admin_pop0203 {
+  float: right;
+  margin-top: -30px;
+  border-top: 1px solid #666;
+  border-right: 1px solid #666;
+  border-left: 1px solid #666;
+  height: 26px;
+  line-height: 26px;
+  background: #888;
+  color: #fff;
+  padding: 0 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.admin_pop0203 a {
+  color: #fff;
+}
+.admin_pop0302 {
+  margin: 20px 0 10px 10px;
+  line-height: 180%;
+  float: left;
+  margin-bottom: 60px;
+}
+.admin_pop0302 span {
+  color: #ff4200;
+  font-family: "NG_EXB";
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.admin_pop0301 img {
+  margin: 10px 0 10px 0px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.admin_pop_title01 {
+  margin-top: 40px;
+  font-size: 1.1em;
+}
+.admin_pop_title02 {
+  margin-top: 40px;
+  font-size: 1.1em;
+}
+.admin_pop_title03 {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+.admin_pop_title0101 {
+  font-size: 1.1em;
+  margin-top: 5px;
+}

@@ -1,0 +1,19 @@
+
+
+/*placeholder 브라우저별 스타일 지정*/
+::-webkit-input-placeholder {letter-spacing: -0.5px; color: #939393; font-size: 0.75rem;}
+:-moz-placeholder {letter-spacing: -0.5px; color: #939393; font-size: 0.75rem;}
+::-moz-placeholder {letter-spacing: -0.5px; color: #939393; font-size: 0.75rem;}
+:-ms-input-placeholder {letter-spacing: -0.5px; color: #939393; font-size: 0.75rem;}
+
+pre { white-space: pre-wrap; overflow-wrap: break-word; font-family: "맑은 고딕", "Malgun Gothic" !important; padding: 0px;}
+iframe {display: block; margin: auto;}
+li {list-style: none}
+ul {margin-bottom: 0 !important; padding-left: 0 !important}
+
+figure { display: table !important; margin: auto !important; margin-top: 40px !important; margin-bottom: 20px !important; position: relative;}
+figcaption { font-size: 0.8125rem; caption-side: bottom; display: table-caption !important; margin-top: 12px; color: #888787; text-align: left;}
+p {margin-bottom: 0}
+input::placeholder,textarea::placeholder {font-size: 13px; color: #c9c9c9 !important; font-weight: 300 !important}
+
+

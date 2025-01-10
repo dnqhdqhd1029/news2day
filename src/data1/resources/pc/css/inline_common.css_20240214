@@ -1,0 +1,182 @@
+/* banner */
+.left_banner > div, 
+.right_banner > div {
+	overflow:hidden
+}
+/* 좌우측배너 */
+.text_skin .banner_wrap, .image_skin .banner_wrap, .layer_skin .banner_wrap {
+	width:auto !important
+}
+.banner_wrap {
+	float:left;
+	margin:0;
+	overflow:hidden
+}
+/* 기타공통외 */
+.banner_con {
+	float:left;
+	margin-bottom:0px;
+	overflow:hidden;
+	width:100%;
+	text-align:center
+}
+/* 배너공통 */
+#wrap .header02 .banner01, #wrap .header02 .banner02 {
+	overflow:hidden;
+	height:105px
+}
+/* 메인탑배너 */
+.left_banner, .right_banner {
+	width:auto
+}
+#no-fouc .banner_con {
+	margin-bottom:0 !important;
+	float:none;
+	text-align:center;
+	width:100%
+}
+/* 모바일공통 */
+#no-fouc .banner_con .banner_wrap {
+	float:none;
+	text-align:center
+}
+.cycle-slideshow {
+	overflow:hidden
+}
+.banner_area2 {
+	max-width:1200px;
+	margin:0 auto
+}
+.banner_area2 .banner_wrap {
+	float:none !important;
+	margin:10px auto
+}
+/* banner end */
+.info_tag_ { position:relative; }
+.header02 #nav7 ul.lnb1 {
+	height:48px;
+}
+.header02 .navbar ul.lnb1 > li:first-child a {
+}
+.header02 .navbar ul.lnb1 > li:first-child a:hover {
+}
+.header02 .navbar ul.lnb1 > li:first-child:hover {
+}
+.header02 .navbar ul.lnb1 > li a.blue {
+	color:#1C75B8;
+}
+.header02 .navbar ul.lnb1 li.bar {
+	padding:0;
+	vertical-align:middle;
+	width:1px;
+}
+.header02 .navbar ul.lnb1 li.bar span {
+	display:inline-block;
+	vertical-align:top;
+	width:1px;
+	height:15px;
+	background:#ccc;
+	margin-top:13px;
+}
+.main_text .news_sec .news_article h3 {
+	font-size:1.05em;
+	line-height:1.6;
+	height:65px;
+}
+.main_text .news_sec .news_article li {
+	height:191px;
+}
+.sec_left_con .item_box_li ul li .li-con {
+	/*height:98px;*/
+}
+.main_text .contents01 {
+	border-bottom:1px solid #EAEAEA;
+}
+.bottom_news .item_box_hd {
+	height:340px;
+}
+.bottom_news .item_box_hd h3 {
+	padding-top:9px;
+	height:66px;
+	font-size:18px;
+}
+.top_bar {
+	background:#F7F8F9;
+	border-bottom:1px solid #EEEFF0;
+}
+.header02 .area_top {
+	background:transparent;
+}
+.header02 .area_top ul li a {
+	color:#999;
+}
+.header02 .date-time {
+	color:#999 !important;
+}
+.navbar .hidden_servmenu {
+	display:none;
+	position:absolute;
+	top:48px;
+	left:0;
+	z-index:100000;
+	border:1px solid #ccc;
+	background:#fff;
+	min-width:164px;		
+	padding:6px 0;
+	box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.2);
+}
+.navbar .hidden_servmenu  li {
+	display:table;
+	clear:both;
+	line-height: 40px;
+}
+.navbar .hidden_servmenu  a {
+	display:block;
+	text-align:left;
+	font-size:16px !important;
+	font-weight:normal !important;
+	color:#333 !important;
+	padding:0 15px !important;
+	white-space:nowrap;
+}
+.navbar .hidden_servmenu > li,
+.navbar .hidden_servmenu li,
+.navbar .hidden_servmenu > li:first-child,
+.navbar .hidden_servmenu li:first-child,
+.navbar .hidden_servmenu li:first-child:hover,
+.navbar .hidden_servmenu li:hover {
+	border:0 !important;
+}
+.navbar .hidden_servmenu  a:hover {
+	color:#1C75B8 !important;
+	border:0 !important;
+}
+.navbar li {
+	position:relative;
+}
+.navbar li:hover .hidden_servmenu {
+	display:block;
+}
+
+.main_text .photo_main_con ul li h3 {
+	background:#fff;
+	color:#000;
+}
+.banner .banner_wrap > div a img {
+	vertical-align:top !important;
+}
+.top_banner_gp {
+	max-width:760px;
+	max-height:88px;
+	overflow:hidden;
+}
+
+.list-pagination {width: 100%; position: relative; float: left; padding: 15px 0; margin-top: 30px; margin-bottom: 50px; text-align: center}
+.pagination-list {padding-left: 0 }
+.pagination-list li {display: inline-block}
+.pagination-list li a{display: inline-block;padding: 10px 12px;font-size: 14px;border-radius: 27px;vertical-align: middle;color: #363636;transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;/* width: 41px; *//* height: 41px; */}
+.pagination-list li a:hover {background: #eee; font-weight: 600; color: #3e71d8}
+.pagination-list li a.active {background: #eee; font-weight: 600; color: #3e71d8}
+
+.pagination-list .arrow-list a {border-radius: 0; width: 40px; height: 35px;}
+.pagination-list .arrow-list a:hover {background: #eee; font-weight: normal}

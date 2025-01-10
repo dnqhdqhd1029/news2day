@@ -1,0 +1,292 @@
+/*color*/
+@each $color, $value in $theme-colors {
+  .bg#{$color} {
+    background-color: $value;
+    color: $white;
+  }
+
+  .text#{$color} {
+    color: $value !important;
+  }
+}
+
+/*margin padding  간격*/
+
+@for $i from -6 through 6 {
+  .mt#{$i} {
+    margin-top: $interval * $i !important;
+  }
+}
+
+@for $i from -6 through 6 {
+  .mr#{$i} {
+    margin-right: $interval * $i !important;
+  }
+}
+
+@for $i from -6 through 6 {
+  .mb#{$i} {
+    margin-bottom: $interval * $i !important;
+  }
+}
+
+@for $i from -6 through 6 {
+  .ml#{$i} {
+    margin-left: $interval * $i !important;
+  }
+}
+
+@for $i from -6 through 6 {
+  .my#{$i} {
+    margin: $interval * $i 0 !important;
+  }
+}
+
+@for $i from -6 through 6 {
+  .mx#{$i} {
+    margin: 0 $interval * $i !important;
+  }
+}
+
+@for $i from -6 through 6 {
+  .py#{$i} {
+    padding: $interval * $i 0 !important;
+  }
+}
+
+@for $i from -6 through 6 {
+  .px#{$i} {
+    padding: 0 $interval * $i !important;
+  }
+}
+
+@for $i from -6 through 6 {
+  .pxy#{$i} {
+    padding: $interval * $i !important;
+  }
+}
+@for $i from -6 through 6 {
+  .mxy#{$i} {
+    margin: $interval * $i !important;
+  }
+}
+
+.skip {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  font-size: 3px;
+  color: transparent;
+  line-height: 0;
+}
+
+.textHide {
+  font-size: 0;
+  text-indent: -99999px;
+}
+
+.hide {
+  display: none !important;
+}
+
+.bgNone {
+  background: none;
+}
+
+.disNone {
+  display: none !important;
+}
+
+.disBlock {
+  display: block !important;
+}
+
+.disInlineBlock {
+  display: inline-block !important;
+}
+
+.disFlex {
+  display: flex;
+}
+
+.disInlineFlex {
+  display: inline-flex;
+}
+
+.textIndent {
+  text-indent: -10000000000000000px;
+  font-size: 0;
+  height: 0;
+}
+
+.relative {
+  position: relative !important;
+}
+
+/* typography */
+.bold100 {
+  font-weight: 100;
+}
+
+.bold200 {
+  font-weight: 200;
+}
+
+.bold300 {
+  font-weight: 300;
+}
+
+.bold400 {
+  font-weight: 400;
+}
+
+.bold500 {
+  font-weight: 500;
+}
+
+.bold600 {
+  font-weight: 600;
+}
+
+.bold700 {
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.font12 {
+  font-size: 12px !important;
+}
+.font14 {
+  font-size: 14px !important;
+}
+
+/*text align*/
+
+.tl {
+  text-align: left !important;
+}
+
+.tc {
+  text-align: center !important;
+}
+
+.tr {
+  text-align: right !important;
+}
+
+.vt {
+  vertical-align: top;
+}
+
+.vm {
+  vertical-align: middle;
+}
+
+.vb {
+  vertical-align: bottom;
+}
+
+.textUnder {
+  text-decoration: underline;
+}
+
+.ellipsis {
+  display: inline-block;
+  width: 98%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+.ellipsis2 {
+  @include ellipsis2;
+}
+
+.ellipsis3 {
+  @include ellipsis3;
+}
+/*layout align*/
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.fn {
+  float: none;
+}
+
+.clear {
+  clear: both;
+}
+
+/*flex*/
+.flexJ {
+  @include fj;
+  //양쪽 정렬
+}
+
+.flexS {
+  @include fs;
+  //start 정렬
+}
+
+.flexC {
+  @include fc;
+  //center 정렬
+}
+
+.flexE {
+  @include fe;
+  //right 정렬
+}
+
+.flexFsc {
+  @include fcs;
+  //Y축 꽉찬 정렬
+}
+
+.flexInline {
+  display: inline-flex;
+}
+
+.flexColumn {
+  flex-direction: column;
+  //y축 정렬
+}
+
+.alignS {
+  align-items: start !important;
+  //y축 상단 정렬
+}
+
+.alignC {
+  align-items: center !important;
+  //y축 중앙 정렬
+}
+
+.alignE {
+  align-items: end !important;
+  //y축 하단 정렬
+}
+
+.flex {
+  flex: 1 1 auto;
+}
+
+.flexNowrap {
+  flex-wrap: nowrap;
+}
+.flexWrap {
+  flex-wrap: wrap;
+}

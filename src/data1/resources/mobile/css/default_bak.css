@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* Reset */
+/*html {overflow-y:scroll}*/
+*{outline:0;margin:0;padding:0;border:0;vertical-align:top;outline:none;box-sizing:border-box;}
+body{font-family:'Nanum Gothic','나눔고딕','NG','Dotum','돋움','돋움체','AppleGothic','Arial','Open Sans','HelveticaNeue','Helvetica','sans-serif';
+font-size:small;/*font-size:100%*/line-height:1;word-break:break-all;color:#000;background:#fff;}
+body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,a,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family:'Nanum Gothic','나눔고딕','NG','Dotum','돋움','돋움체','AppleGothic','Arial','Open Sans',
+'HelveticaNeue','Helvetica','sans-serif';}
+h1, h2, h3, h4{font-family:'NG_B'}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, 
+ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video{margin:0;padding:0;border:0;vertical-align:baseline;}
+.blind{display:block;overflow:hidden;position:absolute;top:0;left:-1000em}
+.clear{clear:both}
+ul, li, ol{list-style:none}
+a{text-decoration:none !important;color:#000;margin:0;padding:0;text-decoration:none;vertical-align:baseline;background:transparent;}
+a:hover{text-decoration:none !important;}
+label{cursor:pointer;}
+img{border:0 none;vertical-align:top;}
+img, video{max-width:100%}
+table{border-collapse:collapse;border-spacing:0;}
+a:active, a:hover, a:visited, a:link{display:block;outline:0 none;text-decoration:none;}
+a, img{border:0;outline:none;}
+textarea{overflow:auto; vertical-align:top;}
+button{position:relative;background:none}
+figure{margin:0;}
+legend{border:0; padding:0}
+fieldset{border: 0;}
+em,address{font-style:normal}
+input,select,button{cursor:pointer}
+header a{outline:none !important}
+.cf:after{content:"";display:block;clear:both}
+.ts{transition:all .3s ease}
+input{background:#fff;}
+input:focus{border:1px solid #a6c8ff !important;}
+textarea:focus{border:2px solid #a6c8ff !important}
+input[type="radio"]{border:none !important;outline:0 !important;box-shadow:none;vertical-align:middle}
+input[type="checkbox"]{border:none !important;outline:0;box-shadow:none;vertical-align:middle}
+input[type="file"]:focus{border:0 !important}
+input, select, button{font:inherit}
+pre{overflow-x:scroll}
+
+/* 플레이스홀더 색상 */
+::-webkit-input-placeholder {/* 크롬 4–56 */color: #9e9e9e}
+:-moz-placeholder { /* 파이어폭스 4–18 */ color: #9e9e9e;opacity:1}
+::-moz-placeholder { /* 파이어폭스 19–50 */ color: #9e9e9e;opacity:1}
+:-ms-input-placeholder { /* 인터넷 익스플로러 10+ */ color:#9e9e9e}
+::placeholder { /* 파이어폭스 51+, 크롬 57+ */color:#9e9e9e;opacity:1}
+
+.ovf{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+
+
